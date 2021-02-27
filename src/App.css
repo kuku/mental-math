@@ -36,3 +36,56 @@
     transform: rotate(360deg);
   }
 }
+
+.Questions {
+  box-sizing: border-box;
+  padding-top: 0.3in;
+  padding-bottom: 0.1in;
+  display: flex;
+  flex-direction: row;
+  width: 8.5in;
+  height: 12in;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Question {
+  width: 22%;
+  font-size: 30px;
+}
+
+.Conditions {
+  width: 400px;
+  margin-left: 20px;
+}
+
+.Conditions-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Conditions-number-input {
+  width: 50px;
+  height: 30px;
+  padding: 2px, 2px, 2px, 4px;
+}
+
+
+@media print {
+  .Questions {
+      background-color: white;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 15px;
+      line-height: 18px;
+  }
+
+  .Question {
+    width: 22%;
+    font-size: 30px;
+  }
+}
